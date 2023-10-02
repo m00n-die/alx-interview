@@ -8,14 +8,14 @@ def pascal_triangle(n):
     result = []
     if n <= 0:
         return result
-    
+
     for i in range(1, n + 1):
         row = []
         first = 1
-        
+
         for j in range(1, i + 1):
             row.append(first)
             first = first * (i - j) // j
         result.append(row)
-   
+
     return result
