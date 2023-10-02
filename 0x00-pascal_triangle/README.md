@@ -1,0 +1,1 @@
+Repository for all files under 0x00-pascal_triangle in the ALX SE Programme
