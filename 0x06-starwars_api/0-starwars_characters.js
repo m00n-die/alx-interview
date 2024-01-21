@@ -11,7 +11,6 @@ const getCharacters = async () => {
   await new Promise(resolve => request(endPoint, (error, response, body) => {
     if (error || response.statusCode !== 200) {
       console.error('Error: ', error, '| StatusCode: ', response.statusCode);
-
     } else {
       const result = JSON.parse(body);
       characters = result.characters;
