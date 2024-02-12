@@ -17,10 +17,10 @@ def island_perimeter(grid):
                 continue
             corner = (
                     i == 0 or (len(grid[i - 1]) > j and grid[i - 1][j] == 0),
-                    j == row_length - 1 or (row_length > j + 1
-                                            and row[j + 1] == 0),
-                    i == length - 1 or (len(grid[i + 1]) > j
-                                        and grid[i + 1][j] == 0),
+                    j == row_length - 1 or (row_length > j + 1 and
+                                            row[j + 1] == 0),
+                    i == length - 1 or (len(grid[i + 1]) > j and
+                                        grid[i + 1][j] == 0),
                     j == 0 or row[j - 1] == 0,
                     )
             perimeter += sum(corner)
